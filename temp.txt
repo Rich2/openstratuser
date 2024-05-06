@@ -1,0 +1,6 @@
+`ZIO[R, _, _] => ZIO[Any, _, _]`  use `.provide()`
+`ZIO[_, E, _] => ZIO[_, Nothing, _]` I am not sure why you want this. But you can use one of the `.catch*` methods.
+`ZIO[_, E, _] => ZIO[_, Throwable, _]` use `.mapError`
+
+> The resulting UIOs and URIOs can then be passed up to both ZIO and none ZIO code.
+You can pass a UIO to non-zio code, but what would it do with it? Shouldn't you first convert it to `Future`, or evaluate it with unsafe run?

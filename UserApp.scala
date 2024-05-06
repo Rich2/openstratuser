@@ -5,6 +5,7 @@ import zio._, ostrat._, geom._, prid.phex._
 object UserApp extends App
 {
   def iz1: Task[Int] = ZIO.succeed(5)
+  val iz2 = iz1.provide(_ => 4)
   Unsafe.unsafe(implicit u => zio.Runtime.default.unsafe.run(iz1))
   val p1 = Pt2(5, 8)
   debvar(p1)
