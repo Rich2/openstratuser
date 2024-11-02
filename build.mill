@@ -1,0 +1,13 @@
+ import mill._, scalalib._, mill.define.ModuleRef, coursier._//maven.MavenRepository
+
+object User extends ScalaModule {
+  def scalaVersion = "3.5.2"
+  val rStrat = Repository("https://richstrat.com/repository")
+  def repositoriesTask = Task.Anon {
+    super.repositoriesTask() :+ rStrat
+  }
+  def ivyDeps = Agg(
+    ivy"com.richstrat::rutil:0.3.4",
+    ivy"com.richstrat::geom:0.3.4"
+  )
+}
