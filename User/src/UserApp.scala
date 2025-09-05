@@ -1,4 +1,4 @@
-/* Copyright 2024 Richard Oliver. Licensed under Apache Licence version 2.0. */
+/* Copyright 2024-5 Richard Oliver. Licensed under Apache Licence version 2.0. */
 package osuser
 import ostrat._, geom._, prid.phex._//, zio._
 
