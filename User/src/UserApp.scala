@@ -1,6 +1,6 @@
 /* Copyright 2024-5 Richard Oliver. Licensed under Apache Licence version 2.0. */
 package osuser
-import ostrat._, geom._, prid.phex._//, zio._
+import ostrat.*, geom.*, prid.phex.*//, zio._
 
 object UserApp extends App
 {
