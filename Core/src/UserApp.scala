@@ -5,6 +5,11 @@ import ostrat.*, geom.*, prid.phex.*
 object UserApp
 {
   def main(args: Array[String]): Unit =
+  {
+    testProc
+  }
+
+  def testProc: Unit =
   { val m1 = 3.metres
     val p1 = Pt2(5, 8)
     val p2 = Pt2(5.5, 16)
@@ -16,6 +21,6 @@ object UserApp
     val eg1 = eg13.Scen13All.gridSys
     val numTiles = eg1.numTiles
     debvar(numTiles)
-    println(m1)
+    debvar(m1)
   }
 }
