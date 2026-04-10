@@ -1,6 +1,6 @@
 name := "OpenStratUser"
 version := "0.3.12"
-ThisBuild/scalaVersion := "3.8.2"
+ThisBuild/scalaVersion := "3.8.3"
 ThisBuild/resolvers += "RichStrat" at "https://richstrat.com/repository"
 
 val Core = Project("Core", file("Core")).settings(
