@@ -8,7 +8,7 @@ val Core = Project("Core", file("Core")).settings(
   libraryDependencies += ("com.richstrat" % "rutil" % "0.3.13").withSources().withJavadoc(),
   libraryDependencies += ("com.richstrat" % "geom" % "0.3.13").withSources().withJavadoc(),
   libraryDependencies += ("com.richstrat" % "tiling" % "0.3.13").withSources().withJavadoc(),
-  libraryDependencies += ("com.richstrat" % "egrid" % "0.3.13"). withSources().withJavadoc(),
+  libraryDependencies += ("com.richstrat" % "egrid" % "0.3.13").withSources().withJavadoc(),
 )
 
 val WebJs = Project("WebJs", file("WebJs")).settings(
