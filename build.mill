@@ -1,6 +1,6 @@
 //| mill-version: 1.1.9
 //| mill-jvm-version: 25
-import mill.*, scalalib.*, scalajslib.*, coursier._, mill.maven.MavenRepository//mill.define.ModuleRef
+import mill.*, scalalib.*, scalajslib.*, coursier.*, mill.maven.MavenRepository, mill.define.ModuleRef
 
 object User extends ScalaModule {
   def scalaVersion = "3.9.0"
@@ -8,7 +8,7 @@ object User extends ScalaModule {
   def repositoriesTask = Task.Anon {
     super.repositoriesTask() :+ rStrat
   }
-  def ivyDeps = Agg(
+  def ivyDeps = Seq(
     ivy"com.richstrat::rutil:0.4.0",
     ivy"com.richstrat::geom:0.4.0"
   )
